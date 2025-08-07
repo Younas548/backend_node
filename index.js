@@ -15,6 +15,9 @@ app.get(`/login`, (req,res) => {
 app.get(`/signup`,(req,res) => {
     res.send("please signup me")
 })
+app.get(`/password`,(req,res)=>{
+    res.send("chai or code")
+})
 
 app.listen(process.env.PORT ,() => {
     console.log(`App listen on port ${port}`);
