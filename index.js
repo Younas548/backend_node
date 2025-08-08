@@ -1,6 +1,8 @@
 
 require(`dotenv`).config()
+const cors = require(`cors`);
 const express =require(`express`);
+const { useEffect } = require("react");
 const app= express()
 const port =3000
 
@@ -22,4 +24,4 @@ app.get(`/password`,(req,res)=>{
 app.listen(process.env.PORT ,() => {
     console.log(`App listen on port ${port}`);
     
-})
+}) 
